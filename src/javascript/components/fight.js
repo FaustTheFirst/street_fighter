@@ -124,11 +124,11 @@ export async function fight(firstFighter, secondFighter) {
         }
 
         if(controls.PlayerOneCriticalHitCombination.includes(event.code)) {
-          critHandler(playerOne) ? attackRelease(playerOne, playerTwo) : null;
+          critHandler(playerOne) ? attackRelease(playerOne, playerTwo) : showStatus(playerOne, 'Ability is not ready yet!');
         }
 
         if(controls.PlayerTwoCriticalHitCombination.includes(event.code)) {
-          critHandler(playerTwo) ? attackRelease(playerTwo, playerOne) : null;
+          critHandler(playerTwo) ? attackRelease(playerTwo, playerOne) : showStatus(playerOne, 'Ability is not ready yet!');
         }
       }
     }
