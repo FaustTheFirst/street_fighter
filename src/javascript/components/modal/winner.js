@@ -2,7 +2,7 @@ import { showModal } from "./modal";
 
 export function showWinnerModal(fighter) {
   const winnerInfo = {
-    title: 'WINNER',
+    title: '...And The WINNER!',
     bodyElement: fighter.name
   }
   
