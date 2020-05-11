@@ -21,6 +21,10 @@ export function createFighterPreview(fighter, position) {
       className: 'fighter-image___preview',
       attributes
     });
+
+    if(position === 'right') {
+      imgElement.style.transform = 'scale(-1, 1)';
+    }
   
     return imgElement;
   }

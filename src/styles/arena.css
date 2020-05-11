@@ -33,7 +33,7 @@
 .arena___fighter-name {
   color: black;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   font-size: 26px;
   font-family: 'Arial Black';
   font-weight: 700;
@@ -53,11 +53,27 @@
   border: 2px solid;
   border-radius: 5px;
   margin: 0 10px;
-  overflow: hidden;
 }
 
 .arena___health-bar {
   height: 100%;
   width: 100%;
   background-color: #ebd759;
+}
+
+.arena___status-marker {
+  -webkit-text-fill-color: rgb(245, 222, 14);
+  -webkit-text-stroke-width: 2px;
+  font-size: 23px;
+  font-family: 'Arial Black';
+  font-weight: 600;
+
+}
+
+#left-status-marker.arena___status-marker {
+  text-align: left;
+}
+
+#right-status-marker.arena___status-marker {
+  text-align: right;
 }
