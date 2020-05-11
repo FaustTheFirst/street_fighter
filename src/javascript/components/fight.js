@@ -2,7 +2,6 @@ import { controls } from '../../constants/controls';
 
 export async function fight(firstFighter, secondFighter) {
   return new Promise((resolve) => {
-    // resolve the promise with the winner when fight is over
 
     const healthBarsContainer = document.getElementsByClassName('arena___health-bar');
     const healthBars = [ ...healthBarsContainer ];

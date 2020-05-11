@@ -22,11 +22,11 @@ const fighterDetailsMap = new Map();
 
 export async function getFighterInfo(fighterId) {
   try {
-    if(!fighterDetailsMap.has(fighterId)){
+    if(!fighterDetailsMap.has(fighterId)) {
       const fighterInfo = await fighterService.getFighterDetails(fighterId);
       fighterDetailsMap.set(fighterId, fighterInfo);
     }
-
+    
     return fighterDetailsMap.get(fighterId);
   } catch(error) {
     throw error;

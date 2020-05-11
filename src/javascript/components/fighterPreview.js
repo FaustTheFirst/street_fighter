@@ -28,7 +28,8 @@ export function createFighterPreview(fighter, position) {
   if(fighter) {
     const keyValueArrayOfObject = Object.entries(fighter);
     fighterElement.append(createPreviewImage(fighter['source']));
-    keyValueArrayOfObject.filter(keyValueAll => keyValueAll[0] !== '_id' && keyValueAll[0] !== 'source')
+    keyValueArrayOfObject
+    .filter(keyValueAll => keyValueAll[0] !== '_id' && keyValueAll[0] !== 'source')
     .forEach(keyValue => fighterElement.append(createProperty(keyValue)));
   }
 
